@@ -1,63 +1,50 @@
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr"> <!-- (Kopio: Arthur tutorials) Teen tästä "jatkojalosteen" -->
-    <head> <!-- head osioon tulee mm. CSS ja JS linkit ja sisäinen CSS ..-->
-    <meta charset="utf-8">
-    <title>Minne kuuluu mitäkin?</title>
-    <link href="Arthur1.css" rel="StyleSheet" type="text/css" media="screen"/> <!-- ulkoinen CSS linkki (Näin CSS yleensä lisätään sivulle)
-    href: kertoo tiedoston jota halutaan linkittää sivuun.
-    rel: määrittää nykyisen asiakirjan ja linkitetyn asiakirjan välisen suhteen
-    type: identifioi sisällön ja osoittaa, että sisältö on CSS.
-    media: kertoo mille medialle/laitteelle kohderesurssi on optimoitu
-    (href & rel ovat oleellisimmat. type & media eivät ole välttämättä tarpeen)-->
-
-    <style> /* Sisäinen CSS alkaa.. Tämä on html.än sisäistä CSS koodia. Siksi monen rivin kommentti on näillä merkeillä. */
-      .image-size-500 {
-        width: 500px; /* kuvan koko 500 (Tässä tapauksessa) muuttaa kaikkien kuvien koon
-        500px, riippumatta niiden kuvakoosta (Kohteissa joissa on class=".image-size-500")*/
-      }
-
-      /*CSS päättyy*/
-      </style> <!--Tämä lopettaa CSS koodin. Siksi kommentti on </style> merkin jäkeen html kommentoinnilla tehty-->
+<html>
+    <head> 
+   
+        <title>Hei Arthur</title>
+         <style> /* Sisäinen CSS alkaa.. Tämä on html.än sisäistä CSS koodia. Siksi monen rivin kommentti on näillä merkeillä. */
+     
+         </style> <!--Tämä lopettaa CSS koodin. Siksi kommentti on </style> merkin jäkeen html kommentoinnilla tehty-->
 
     <!-- Monenrivin kommentti toimii CSS koodissa ja JS koodissa
     (merkeillä /* */) HTML kielessä taas merkeillä <!-- & -->
-  </head>
+    </head>
   <body> <!-- body osioon tulee koodin näkyvät osat-->
-    <img class="image-size-500" src="BasicHtmlStructure.png" alt="basic html structure"> <img class="image-size-500" src="htmlpage_head_body-in.png" alt="htmlpage_head_body-in"> <!-- Kuvat tulevat allekkain käytä (CSS asetteluun)-->
-    <main>
-      <h2>CatPhotoApp</h2>
-      <main> <!-- FreeCode camp: https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5
+      <main>
+      <h2>(h2)</h2>
+      </main> <!-- FreeCode camp: https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5
         (Sivusi pää kontentti)
       Main alueeseen tulee kaikki se minkä perusteella hakukoneet, kuten google löytävät sivustosi sisältöä.
       ."The <main> HTML5 tag helps search engines and other developers find the main content of your page." -->
-        <p>Click here to view more <a href="#">cat photos</a>.</p> <!-- Hashtag luo kuoletetun linkin ??varmista?? -->
+       <!-- <p>Click here to view more <a href="#">cat photos</a>.</p> <!-- Hashtag luo kuoletetun linkin ??varmista?? -->
 
         <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
 
-        <p>Things cats love:</p>
+        <p>Sisältö otsikko1</p>
         <ul> <!-- Unordered list, eli ihan vaan lista. (bullet points) CSS koodilla voi muuttaa tätä vakio muotoilua. -->
-          <li>cat nip</li>
-          <li>laser pointers</li>
-          <li>lasagna</li>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
         </ul>
-        <p>Top 3 things cats hate:</p>
+        <p>Sisältö otsikko2</p>
         <ol> <!-- Ordered list ..lista järjestysnumeroilla alkaen numerosta 1. -->
-          <li>flea treatment</li>
-          <li>thunder</li>
-          <li>other cats</li>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
         </ol>
-        <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+<!--        <form action="https://www.freecatphotoapp.com/submit-cat-photo">
           <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
           <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br> <!-- br = rivin vaihto -->
 
-          <label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label>
+  <!--    <label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label>
           <label for="hating"><input id="hating" type="checkbox" name="personality"> Hating</label>
           <label for="lazing"><input id="Lazing" type="checkbox" name="personality"> Lazing</label><br>
 
           <input type="text" placeholder="cat photo URL" required>
           <button type="submit">Submit</button>
-        </form>
+        </form> -->
       </main>
     </main>
   </body>
