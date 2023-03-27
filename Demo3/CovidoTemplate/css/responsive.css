@@ -1,9 +1,9 @@
-/*--------------------------------------------------------------------- 
-File Name: responsive.css 
+/*---------------------------------------------------------------------
+File Name: responsive.css
 ---------------------------------------------------------------------*/
 
 @media (min-width: 1343px) and (max-width: 1500px) {
-   
+
     #banner1 .carousel-control-prev {
        right: 10%;
     }
@@ -11,12 +11,12 @@ File Name: responsive.css
 }
 
 @media (min-width: 1200px) and (max-width: 1342px) {
-   
+
     .full_bg {
         height: 100%;
     }
      .latest .read_more {top: 19%;}
-  
+
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -38,15 +38,15 @@ File Name: responsive.css
    .site-navbar ul li {padding-right: 32px;}
    .logo_midle::before {right: 2px;}
     .full_bg {
-        height: 100%; 
+        height: 100%;
     }
-    
-  
+
+
     .photog h1 {
         font-size: 50px;
         line-height: 53px; padding-bottom: 40px;
     }
-    
+
  .about {margin: 0 10px; padding: 80px 20px; margin-top: -90px;}
 
  .titlepage h2 {font-size: 33px; line-height: 40px;}
@@ -74,7 +74,7 @@ File Name: responsive.css
      .left, .right {display: none;}
      .logo_sm {
     display: inherit;
-} 
+}
     .full_bg {
         height: 100%;
     }
@@ -83,7 +83,7 @@ File Name: responsive.css
     position: absolute;
     content: "";
     top: 20px;
-    background: url(../images/logo1.png);
+    background: url(../images/Rats-logo1.png);
     width: 158px;
     height: 122px;
     z-index: 999;
@@ -134,12 +134,12 @@ padding-top: 42px;
     .d_none {
         display: none;
     }
-  
+
     /* navbar css for mobile start */
     .nav-toggler {
         display: block;
         position: absolute;
-        right: 15px;
+        right: 20px;        <!-- navigointi napin sijainti horisontaalisesti-->
         z-index: 99999;
     }
     .site-navbar {
@@ -148,11 +148,11 @@ padding-top: 42px;
     .site-navbar ul {
         position: absolute;
         width: 100%;
-        left: -15px;
+        left: -20px;
         top: 60px;
         flex-direction: column;
         align-items: center;
-        background-color: #ed242e;
+        background-color: #1b5218;
         max-height: 0;
         overflow: hidden;
         transition: .3s;
@@ -161,15 +161,15 @@ padding-top: 42px;
     }
     .site-navbar ul li {
         width: 100%;
-        text-align: left;
+        text-align: right;
         padding-right: 0;
     }
     .site-navbar ul li a {
-        padding: 25px 25px 0px 25px;
+        padding: 2px 25px 5px 25px;
     }
     .site-navbar ul.open {
         max-height: 100vh;
-        padding-bottom: 25px;
+        padding-bottom: 10px;
         overflow: visible;
     }
     /* navbar css for mobile end */
@@ -181,7 +181,7 @@ padding-top: 42px;
      .left, .right {display: none;}
      .logo_sm {
     display: inherit;
-} 
+}
     .full_bg {
         height: 100%;
     }
@@ -190,7 +190,7 @@ padding-top: 42px;
     position: absolute;
     content: "";
     top:10px;
-    background: url(../images/logo1.png);
+    background: url(../images/Rats-logo1.png);
     width: 158px;
     height: 122px;
     z-index: 999;
@@ -202,15 +202,15 @@ padding-top: 42px;
     .slider_main {
         padding-top: 27%;
     }
-  
+
     .photog .read_more {margin-bottom: 5px;}
-   
+
 
   .photog h1 {
     font-size: 44px;
     line-height: 51px;
 }
-  
+
     .about_img, .coronata_img  {
       padding-left: 0;
       padding-right: 0;
@@ -252,7 +252,7 @@ line-height: 25px;}
 font-size: 25px;
 line-height: 30px;
 }
-   
+
     .d_none {
         display: none;
     }
@@ -298,6 +298,6 @@ line-height: 30px;
         max-height: 100vh;
         padding-bottom: 25px;
         overflow: visible;
-       
+
     }
 }

@@ -1,9 +1,9 @@
-/*--------------------------------------------------------------------- 
-File Name: style.css 
+/*---------------------------------------------------------------------
+File Name: style.css
 ---------------------------------------------------------------------*/
 
 
-/*--------------------------------------------------------------------- 
+/*---------------------------------------------------------------------
 import Fonts
 ---------------------------------------------------------------------*/
 
@@ -16,10 +16,10 @@ import Fonts
  ----------------------------------------*****/
 
 
-/*--------------------------------------------------------------------- 
-import Files 
+/*---------------------------------------------------------------------
+import Files
 ---------------------------------------------------------------------*/
-
+/*
 @import url(normalize.css);
 @import url(icomoon.css);
 @import url(font-awesome.min.css);
@@ -32,9 +32,9 @@ import Files
      font-style: normal;
 }
 
-
-/*--------------------------------------------------------------------- 
-basic 
+/*
+/*---------------------------------------------------------------------
+basic
 ---------------------------------------------------------------------*/
 
 * {
@@ -237,14 +237,14 @@ button {
 .loader_bg {
      position: fixed;
      z-index: 9999999;
-     background: #fff;
-     width: 100%;
+     background: #000000; /*alkuperäinen fff*/
+     width: 100%; /*Täyttää koko näytön kunwidth + height = 100%*/
      height: 100%;
 }
 
 .loader {
-     height: 100%;
-     width: 100%;
+     height: 100%; /* 1% = keskipiste ylälaidassa 200% = -||- alalaidassa ~koska align-items: center*/
+     width: 100%; /* 1% = tosi pieni oikeassa laidassa 200% = 100% kokonen oikeassa laidassa.. =?*/
      position: absolute;
      left: 0;
      top: 0;
@@ -254,7 +254,7 @@ button {
 }
 
 .loader img {
-     width: 280px;
+     width: 400px;
 }
 
 .titlepage {
@@ -265,7 +265,7 @@ button {
 .titlepage h2 {
     text-transform: uppercase;
      font-size: 45px;
-     color: #353d47;
+     color: #985555; <!-- #353d47 title color (all pages)-->
      line-height: 50px;
      font-weight: bold;
      padding: 0;
@@ -282,7 +282,7 @@ button {
      font-size: 17px;
      background-color: #05254d;
      color: #fff;
-    
+
      width: 100%;
      max-width: 275px;
      text-align: center;
@@ -295,7 +295,7 @@ button {
 }
 
 .read_more:hover {
-     background: #ed1c24;
+     background: #1b5218;
      color: #fff;
      transition: ease-in all 0.5s;
 }
@@ -317,11 +317,11 @@ button {
 
 .header-area  {
      padding: 30px 16px;
-     color: #f1f1f1;
+     color: #000000;
      width: 100%;
      z-index: 9999999;
      height: 87px;
-     background:#ed242e;
+     background:#000000;
 }
 
 
@@ -336,7 +336,7 @@ button {
     bottom: -93px;
     width: 158px;
     height: 96px;
-    background: url(../images/logo.png);
+    background: url(../images/logoRats-logo1.png); /* logo.png alkuperäinen*/
     z-index: 999;
     margin: 0 auto;
     left: 0;
@@ -354,7 +354,7 @@ button {
     list-style: none;
     display: flex;
 }
-
+/*Navigaatiopalkin fontti*/
 .site-navbar ul li a {
     color: #fef6fc;
     font-size: 17px;
@@ -372,10 +372,10 @@ button {
 }
 
 .site-navbar ul li a:hover {
-    color: #00132b;
-}
+    color: #33cc00; /*Neonvihreä 33cc00*/
+}/* aktiivinen sivu navigaatiopalkissa */
 .site-navbar ul li a.active {
-    color: #00132b;
+    color: #f5f000; /*Keltanen #f5f000*/
 }
 
 /* navbar regular css end */
@@ -459,7 +459,7 @@ button {
 }
 
 .left  a i {
-    color: #fff;
+    color: #000000; <!-- fff -->
 
 }
 .right {
@@ -517,7 +517,7 @@ button {
      text-align: center;
      line-height: 59px;
      margin-right: 0px;
-     background: transparent; 
+     background: transparent;
      border: none;
      text-indent: unset;
      display: none;
@@ -570,7 +570,7 @@ button {
 }
 
 
-.photog .read_more:hover {background: #ed1c24; color: #fff;}
+.photog .read_more:hover {background: #1b5218; color: #fff;}
 .slider_main .carousel-item {
      height: 100%;
      width: 100%;
@@ -580,31 +580,31 @@ button {
 #banner1 .carousel-control-next {
      width:80px;
      height: 80px;
-     background-color: #ed1c24;
+     background-color: #33cc00;
      color: #fff;
      font-size: 35px;
      opacity: 1;
      top: 50%;
      border-radius: 50%;
-    
+
 }
 
 #banner1 .carousel-control-prev {
-   
+
       left: 0%;
 }
 
 #banner1 .carousel-control-next {
-     
+
      right: 0%;
 }
 
-#banner1 .carousel-control-next:focus,
+
+
 #banner1 .carousel-control-next:hover,
-#banner1 .carousel-control-prev:focus,
 #banner1 .carousel-control-prev:hover {
      background-color: #fff;
-     color: #ed1c24;
+     color: #33cc00;
 }
 
 
@@ -671,7 +671,7 @@ button {
 .coronata {
     background: #fff;
    padding-top: 100px;
-  
+
 }
 
 .coronata .titlepage {
@@ -715,7 +715,7 @@ button {
 
 .protect .titlepage p {
      padding-top: 5px;
-   
+
 }
 .desktop {
     padding: 45px 20px 30px 20px;
@@ -730,7 +730,7 @@ button {
      font-weight: bold;
      padding-top: 25px;
      padding-bottom: 5px;
- 
+
 }
 
 .protect_box span {
@@ -761,11 +761,11 @@ button {
 }
 
 
-.owl-carousel .owl-nav button.owl-next, 
+.owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev {
      width: 90px;
      height: 90px;
-     background-color: #ed1c24 !important;
+     background-color: #1b5218 !important;
      color: #fff !important;
      font-size: 55px !important;
      line-height: 30px !important;
@@ -774,9 +774,9 @@ button {
      transition: ease-in all 0.5s;
      box-shadow: 0 0 80px rgba(13, 3, 3, 0.11);
 }
-.owl-carousel .owl-nav button.owl-next:hover, 
+.owl-carousel .owl-nav button.owl-next:hover,
 .owl-carousel .owl-nav button.owl-prev:hover {
-     background-color: #fff !important;
+     background-color: #1b5218 !important;
      transition: ease-in all 0.5s;
      color: #000 !important;
 }
@@ -868,7 +868,7 @@ button {
 
 .doctors {
     background: #fff;
-   
+
    padding-top: 50px;
    position: relative;
 
@@ -894,8 +894,8 @@ button {
 }
 
 .reader i img {
-   border-radius: 50%;  
-       box-shadow: 3px 0 62px rgba(13, 3, 3, 0.18);  margin-top: -50px;  
+   border-radius: 50%;
+       box-shadow: 3px 0 62px rgba(13, 3, 3, 0.18);  margin-top: -50px;
 }
 
 
@@ -1160,7 +1160,7 @@ ul.top_infomation li i:hover {
 
 .copyright {
     margin-top: 60px;
-   
+
     padding-bottom: 20px;
 }
 
@@ -1194,7 +1194,7 @@ ul.top_infomation li i:hover {
 .inner_page .full_bg {
      height: 106px;
      padding-bottom: 0;
-    
+
 }
 .inner_page .about {
     margin-top: 145px;
