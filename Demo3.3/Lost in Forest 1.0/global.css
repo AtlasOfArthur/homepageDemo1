@@ -1,3 +1,8 @@
+/*New*/
+*{
+	margin: 0;
+	padding: 0;
+}
 /******************************************************
    L O S T     I N    F O R R E S T
    by Empire Elements
@@ -11,6 +16,7 @@ body {
  ******************************************************/
 #Container {
 	width: 78%;
+	max-width: 900px;
 	margin-top: 5px;
 	margin-right: auto;
 	margin-bottom: 0px;
@@ -20,11 +26,10 @@ body {
 	padding-right: 10px;
 	padding-bottom: 10px;
 	padding-left: 10px;
-	background-image: url(main-bg.jpg);
+	background-image: url(koronakivella.jpg); /**/
 	background-repeat: no-repeat;
 	background-position: left top;
-	background-size: 110%, 110%;
-	background-color: #000000;
+	background-size: 135%, 135%; /*new*/
 	overflow: auto;
 	z-index: 9999;
 }
@@ -35,6 +40,9 @@ body {
 	padding: 0px;
 	width: auto;
 	clear: both;
+	background-color: #000000;
+	padding-bottom: 10px;
+	border: 1px solid #33cc00;
 	z-index: 1;
 }
 #Top h1{
@@ -45,7 +53,7 @@ body {
 	padding-top: 10px;
 	padding-right: 0px;
 	padding-bottom: 0px;
-	padding-left: 10px;
+	padding-left: 20px;
 	margin: 0px;
 	z-index: 20;
 }
@@ -63,7 +71,7 @@ body {
 	padding-top: 0px;
 	padding-right: 0px;
 	padding-bottom: 0px;
-	padding-left: 10px;
+	padding-left: 20px;
 	z-index: 20;
 }
 #Top p{
@@ -71,13 +79,13 @@ body {
 	font-size: 12px;
 	color: #757575;
 	margin: 0px;
-	padding-top: 0px;
+	padding-top: 15px;
 	padding-right: 0px;
 	padding-bottom: 0px;
-	padding-left: 25px;
+	padding-left: 20px;
 	z-index: 20;
 }
-#Menucontainer{ /* Uus! */
+#Menucontainer{ /* new */
 	position:relative;
 	width: 98%;
 	height: 190px;
@@ -95,7 +103,8 @@ body {
 }
 
 #MenuHold {
-	position: absolute;
+	list-style-type: none; /*New*/
+	position: absolute; /*New*/
 	top: 0;
 	left: 0;
 	float: left;
@@ -106,7 +115,7 @@ body {
 	z-index: 10;
 }
 #MenuHold a{
-	border: 1px solid #686868;
+	border: 1px solid #ee9700;
 	width: 150px;
 	max-width: 120%;
 	min-width: 50%;
@@ -127,8 +136,8 @@ body {
 	padding-left: 3px;
 	float: left;
 }
-#MenuHold a:hover{
-	color: #CCCCCC;
+#MenuHold li a:hover{
+	color: #33cc00;
 	background-color: #111111;
 	width: 155px;
 	display: block;
@@ -146,6 +155,24 @@ body {
 	padding-left: -10px;
 	border: 2px solid #ee9700;
 	z-index: 1;
+}
+
+#index #link1 a, #galleria #link2 a{
+	background-color: #33cc00;
+	color: #000000;
+	text-decoration: none;
+	font-size: 24px;
+	text-align: right;
+	margin-top: 1px;
+	margin-right: 5px;
+	margin-bottom: 1px;
+	margin-left: 5px;
+	padding-top: 4px;
+	padding-right: 10px;
+	padding-bottom: 4px;
+	padding-left: -10px;
+	border: 2px solid #000000;
+	z-index: 0;
 }
 /******************************************************
   Main Text
@@ -182,7 +209,7 @@ body {
 	float: right;
 	width: 405px;
 	background-color: #141414;
-	border: 1px solid #6b6b6b;
+	border: 1px solid #ee9700;
 	overflow: auto;
 	background-image: url(Untitled-3.gif);
 	background-repeat: no-repeat;
@@ -222,7 +249,7 @@ body {
 #OneField {
 	background-color: #000000;
 	clear: both;
-	border: 1px solid #6b6b6b;
+	border: 1px solid #ee9700;
 	overflow: auto;
 	padding-top: 0px;
 	padding-right: 0px;
@@ -253,8 +280,9 @@ body {
         Photo gallery - one slope
 ****************************************/
 #Gallery {
+	position:  absolute;
 	padding: 0px;
-	border: 1px dashed #666666;
+	border: 1px solid #33cc00; /*Ei näy?*/
 	margin-top: 10px;
 	margin-right: 0px;
 	margin-bottom: 0px;
@@ -262,6 +290,7 @@ body {
 	overflow: auto;
 	height: auto;
 	width: auto;
+	display: contents; /*New*/
 }
 #Gallery h2{
 	font-family: "Trebuchet MS", Geneva, Arial, Helvetica, sans-serif;
@@ -294,7 +323,7 @@ body {
 }
 
 #Gallery ul li a img {
-	border: 3px solid #666666;
+	border: 3px solid #ee9700;
 }
 
 #Gallery ul li a img:hover {
@@ -325,7 +354,7 @@ body {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
-	border: 1px solid #666666;
+	border: 1px solid #ee9700;
 }
 #Footer p{
 	font-family: Verdana, Arial, Helvetica, sans-serif;
