@@ -57,14 +57,12 @@ body {
 	padding-left: 20px;
 	margin: 0px;
 	text-align: left;
-
 	pointer-events: none;
 }
 #Top h1 sup{
 	font-size: 18px;
 	font-weight: bold;
 	color: #595959;
-
 	pointer-events: none;
 }
 #Top h2{
@@ -76,7 +74,6 @@ body {
 	padding-right: 0px;
 	padding-bottom: 0px;
 	padding-left: 20px;
-
 	pointer-events: none;
 }
 #Top p{
@@ -96,7 +93,7 @@ body {
 
 .slider{
 	position: absolute;
-	height: 903px; /* Toimii vain etusivulla. muilla sivuilla väärä korkeus (100% väärä korkeus myös, miks? en tiedä.) */
+	height: 903px; /* Toimii vain etusivulla. muilla sivuilla väärä korkeus (100% väärä korkeus myös, miks en tiedä.) */
 	opacity: 100%; /*Työstöä varten. Linkit on sliderin alla*/
 	width: 180px;
 	position: absolute;
