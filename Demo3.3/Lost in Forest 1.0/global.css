@@ -226,7 +226,7 @@ body {
 	padding-right: 20px;
 	padding-bottom: 10px;
 	padding-left: 20px;
-	background-color: #5e5e5e;
+	background-color: #252525;
 	opacity: 80%;
 }
 #Right h3{
@@ -251,7 +251,8 @@ body {
 }
 /***********  ONE FILELD ****************/
 #OneField {
-	background-color: #000000;
+	background-color: #252525;
+	opacity: 80%;
 	clear: both;
 	border: 1px solid #ee9700;
 	overflow: auto;
@@ -266,9 +267,9 @@ body {
 }
 #OneField p{
 	font-family: Arial, Helvetica, sans-serif;
+	color: #FEFEFE;
 	font-size: 12px;
 	font-weight: normal;
-	color: #565656;
 	padding: 10px;
 	margin: 0px;
 }
@@ -373,6 +374,8 @@ body {
 	margin-bottom: 0px;
 	margin-left: 0px;
 	border: 1px solid #ee9700;
+	background-color: #252525;
+	opacity: 80%;
 }
 #Footer p{
 	font-family: Verdana, Arial, Helvetica, sans-serif;
