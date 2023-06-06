@@ -299,10 +299,13 @@ body {
 	justify-content: center; /* Center the images horizontally */
 	align-items: center; /* Center the images vertically */
 }
-#Gallery h2{ /* Nää on rikki, en tiiä miks*/
+#Gallery h2{ 
 	font-family: "Trebuchet MS", Geneva, Arial, Helvetica, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
 	font-size: 12px;
-	color: #BA441E;
+	color: #ee9700;
+	background-color: #252525;
 	padding-top: 5px;
 	padding-right: 0px;
 	padding-bottom: 0px;
@@ -346,7 +349,7 @@ body {
 	left: 50%;
 	position: absolute;
 	z-index: 1;
-
+}
 #Gallery ul li h2 {
 	margin-top: 10px;
 	color: #FFFFFF;
@@ -375,13 +378,14 @@ body {
 }
 #Footer p{
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	color: #666666;
+	font-size: 12px;
+	color: #ffffff;
 	margin: 0px;
 	padding: 0px;
 	font-size: 10px;
 }
 #Footer a{
-	color: #CCCCCC;
+	color: #33cc00;
 	text-decoration: underline;
 }
 #Footer a:hover{
