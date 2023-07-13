@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const onkoKirjautunut = () => {
-    let kirjautunut = 'kyllä'; // Alustetaan muuttuja kirjautunut arvolla 'kyllä'
-    if (kirjautunut === 'kyllä') { // Tarkistetaan, onko kirjautunut arvo 'kyllä'
+    let kirjautunut = 'kylla'; // Alustetaan muuttuja kirjautunut arvolla 'kyllä'
+    if (kirjautunut === 'kylla') { // Tarkistetaan, onko kirjautunut arvo 'kyllä'
       const nimi = localStorage.getItem("nimi"); // Haetaan tallennettu nimi localStoragesta
       if (nimi) { // Tarkistetaan, onko nimi olemassa
         document.getElementById("tervetuloa_teksti").textContent = "Tervetuloa " + nimi; // Päivitetään tervetuloa-tekstin sisältö nimen kanssa
