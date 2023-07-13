@@ -3,11 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demo7
-  </title>
+  <title>Demo7</title>
   <script src="script.js"></script>
+  <script src="kirjautuminen.js"></script>
 </head>
+
+
 <body>
-  <p id="tekijan-nimi"></p>
+  <p id="tervetuloa_teksti">Tervetuloa</p>
+  <form id="kirjautumis_lomake">
+    <input id="nimi" type="text" placeholder="syötä nimesi" value="" />
+    <input id="Kirjaudu_nappi" type="submit"  value="Kirjaudu sisään" onclick="kirjaudu(event)" />
+  </form>
+  <p id="Kommentti tehtävästä">Tämä ei oikeastaan ole kirjautumis tehtävä, koska ohjelma ei koskaan tarkista onko käyttäjä kirjautunut vai ei (true / false) Sen sijaan tehtävässä tulostetaan vain laatikossa oleva teksti Tervetuloa tekstin perään. Lisä huomiona sanoisin vielä, että vaikka ohje oli hyvä, oli se silti todella epämääräinen. Taaskaan ei lukenut että selaimena pitäisi olla edge ja Local storage ohje oli aivan älyttömän epämääräinen.</p>
 </body>
 </html>
