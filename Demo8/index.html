@@ -13,8 +13,9 @@
   <p id="tervetuloa_teksti">Tervetuloa</p>
   <form id="kirjautumis_lomake">
     <input id="nimi" type="text" placeholder="syötä nimesi" value="" />
-    <input id="Kirjaudu_nappi" type="submit"  value="Kirjaudu sisään" onclick="kirjaudu()" />
+    <input id="Kirjaudu_nappi" type="submit"  value="Kirjaudu sisään" onclick="kirjaudu()" /> <!-- Suluissa oli (event). Oli turha -->
   </form>
-  <p id="Kommentti tehtävästä">Tehtävän tekemiseen meni hirvittävän kauan, ei pelkästään omien sähläyksien takia, vaan siksi että ihmettelin miten esimerkiksä on saatu ohjelma toimimaan ilman että nimi muuttujaa tallennetaan mihinkään. Itse sain virheen, joka printtasi Tervetuloa tekstin perään: <strong>[object HTMLInputElement]</strong>]  ...  Lisäsin rivin:<strong> const nimi = localStorage.getItem("nimi");</strong>  Sitten toimi. Vasta myöhemmin tajusin kuitenkin ettei nimeä tarvinnut tallentaa, koska vertaus tuli tehdä kirjautumis ehtoon <strong>"kirjautunut" === "kylla"</strong>, eikä nimen olemassaoloon.</p>
+  <button id="logout_nappi" style="display: none;">Log out</button>
+  <p id="Kommentti tehtävästä">Tehtävän tekemiseen meni hirvittävän kauan, ei pelkästään omien sähläyksien takia, vaan siksi että ihmettelin miten esimerkiksä on saatu ohjelma toimimaan ilman että nimi muuttujaa tallennetaan mihinkään. Itse sain virheen, joka printtasi Tervetuloa tekstin perään: <strong>[object HTMLInputElement]</strong>  ...  Lisäsin rivin:<strong> const nimi = localStorage.getItem("nimi");</strong>  Sitten toimi.<br><br> Vasta myöhemmin tajusin kuitenkin ettei nimeä tarvinnut tallentaa, koska vertaus tuli tehdä kirjautumis ehtoon <strong>"kirjautunut" === "kylla"</strong>, eikä nimen olemassaoloon.<br><br>Ohjelma kirjautuu sisään ilman nimeä. En lisännyt ehtoa että nimi täytyy olla kentässä, koska tehtävä ei sitä vaatinut.</p>
 </body>
 </html>

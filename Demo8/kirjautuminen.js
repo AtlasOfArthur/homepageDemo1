@@ -1,22 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
   const onkoKirjautunut = () => {
     if (localStorage.getItem("kirjautunut") === "kylla") { // Tarkistaa, onko kirjautunut 
-     document.getElementById("tervetuloa_teksti").textContent += localStorage.getItem("nimi");
-     document.getElementById("kirjautumis_lomake").style.display = "none"; // Piilottaa kirjautumislomakkeen
+      document.getElementById("tervetuloa_teksti").textContent += localStorage.getItem("nimi");
+      document.getElementById("kirjautumis_lomake").style.display = "none"; // Piilottaa kirjautumislomakkeen
+      document.getElementById("logout_nappi").style.display = "block"; // Näyttää "Logout" näppäimen
     }
-    
+    // Edellisessä oli paljon turhia rivejä. Tänään enemmän ajatuksella tehty ratkaisu
   };
 
   onkoKirjautunut(); // Kutsuu onkoKirjautunut-funktiota
 
-  const kirjaudu = () => {
-  //  event.preventDefault(); // (Nyt toimi ilman tätä. Olin säheltänyt ylimääräisiä rivejä edelliseen versioon jostainsyystä)
+  const kirjaudu = () => { // Suluissa oli (event). Poistettu turhana.
+    //  event.preventDefault(); // (Nyt toimi ilman tätä. Olin säheltänyt ylimääräisiä rivejä edelliseen versioon jostainsyystä)
     localStorage.setItem("nimi", document.getElementById("nimi").value); 
-    localStorage.setItem("kirjautunut", "kyllä"); // Tallennetaan nimi localStorageen
+    localStorage.setItem("kirjautunut", "kylla"); // Tallennetaan nimi localStorageen
   };
 
   document.getElementById("Kirjaudu_nappi").addEventListener("click", kirjaudu); // Lisätään klikkaustapahtumankuuntelija kirjaudu-funktiolle
   // Esimerkissä ei ollut tätä riviä, eikä tätä neuvottu. Ei toimi ilman tätä.
+
+  const kirjauduUlos = () => {
+    localStorage.removeItem("kirjautunut"); // Poistaa kirjautumistiedon localStoragesta
+    localStorage.removeItem("nimi"); // Poistaa nimen localStoragesta
+    location.reload(); // Päivittää sivun
+  };
+
+  document.getElementById("logout_nappi").addEventListener("click", kirjauduUlos); // Lisätään klikkaustapahtumankuuntelija kirjauduUlos-funktiolle
 });
+
+
 
 // (Tein nuolifunktioilla, koska se on uudempi tapa ja koitan totutella käyttämään sitä.)
