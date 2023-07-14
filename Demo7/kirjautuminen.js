@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  onkoKirjautunut(); // Kutsutaan onkoKirjautunut-funktiota
+  onkoKirjautunut(); // Kutsuu onkoKirjautunut-funktiota
 
   const kirjaudu = (event) => {
     event.preventDefault(); // Estetään lomakkeen oletustoiminta (Ei toiminut ilman tätä)
