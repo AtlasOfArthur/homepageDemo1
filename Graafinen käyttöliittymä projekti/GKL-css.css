@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('GKL-kuvat/abstract-vector-graphic-_X-Arthur.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: linear-gradient(180deg, rgba(0,30,50,1) 0%, rgba(0,50,50,1) 28%, rgba(0,50,50,0.8482268258426966) 48%, rgba(0,37,37,0.4) 73%, rgba(1,22,22,0) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 30px;
+    color: rgba(109, 230, 50, 1);
+    user-select: none;
+}
+
+.navigaatio a {
+    position: relative;
+    font-size: 17px;
+    color: rgba(109, 230, 50, 1);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigaatio a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(109, 230, 50, 1);
+    border-radius: 5px;
+    transform-origin: bottom;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+
+}
+
+.navigaatio a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+
+}
+
+.navigaatio .popUpLoginBtn {
+    width: 130px;
+    height: 40px;
+    background: transparent;
+    font-size: 17px;
+    border: 2px solid rgba(109, 230, 50, 1);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: rgba(109, 230, 50, 1);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.navigaatio .popUpLoginBtn:hover {
+    background-color: rgba(109, 230, 50, 1);
+    color: #162938;
+    border: 2px solid rgba(0, 245, 138, 0.6);
+}
+
+/* Test */
+/*
+@keyframes kuusikulmionAnimaatio {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .kuusikulmio {
+    width: 200px;
+    height: 230px;
+    background-color: rgba(0, 128, 255, 0.4);
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    position: relative;
+    overflow: hidden;
+    animation: kuusikulmionAnimaatio 2s ease-in-out infinite;
+    box-sizing: border-box;
+    box-shadow: 
+      0 0 0 -6px rgba(57, 255, 20, 0.8), 
+      0 0 0 12px rgba(255, 0, 0, 0.8), 
+      0 0 0 18px rgba(0, 0, 0, 0.8); 
+  
+  .kuusikulmio::before,
+  .kuusikulmio::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  .kuusikulmio::before {
+    border: 6px solid rgba(255, 0, 0, 0.8);
+    transform: rotate(60deg);
+    background-clip: padding-box;
+  }
+  
+  .kuusikulmio::after {
+    border: 6px solid rgba(0, 0, 0, 0.8);
+    transform: rotate(-60deg);
+    background-clip: padding-box;
+  }
+*/
+
+
+
+
+
+
+
+/*  
+ .kuusikulmio {
+    width: 200px;
+    height: 230px;
+    background-color: rgba(0, 128, 255, 0.4);
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    position: relative;
+    overflow: hidden;
+    animation: kuusikulmionAnimaatio 2s ease-in-out infinite;
+    border: 6px solid rgba(57, 255, 20, 0.8); 
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.5); 
+    box-shadow: 0 0 0 6px rgba(57, 255, 20, 0.8); 
+}
+  
+  .kuusikulmio::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border: 6px solid;
+    border-image-slice: 1;
+    z-index: -1;
+ 
+/*
+  .kuusikulmio {
+    width: 200px;
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+    animation: kuusikulmionAnimaatio 2s ease-in-out infinite;
+    
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+
+    background-image: radial-gradient(
+        circle,
+        rgba(0, 37, 37, 0.5) 0%,
+        rgba(0, 37, 37, 0.5) 55%,
+        rgba(0,37,37,1) 91%,
+        rgba(0, 37, 37, 0.7) 100%
+      );
+
+  }
+  
+  .kuusikulmio::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    right: -12px;
+    bottom: -12px;
+    border: 12px solid rgba(57, 255, 20, 0.8);
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    z-index: -1;
+  }
+  
+  .kuusikulmio::after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border: 6px solid rgba(57, 255, 20, 0.8); 
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    z-index: -2;
+  }*/
+
+
+
+
+
+
+  .kuusikulmio {
+    width: 150px;
+    height: 150px;
+    background-color: #008080;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    position: relative;
+    margin: 50px;
+    overflow: hidden;
+    animation: kuusikulmionAnimaatio 2s ease-in-out infinite;
+    left: calc(50% - 75px); /* KORJATTU: Sijainti keskellä vaakasuunnassa */
+    top: calc(50% - 75px); /* KORJATTU: Sijainti keskellä pystysuunnassa */
+}
+  
+  span {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 6px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .border1 {
+    top: 10%; /**/
+    left: 70%;/**/
+    transform: translate(-50%, -50%) rotate(27deg);
+  }
+  
+  .border2 {
+    top: 13%; /* Vino*/
+    left: 24%;
+    transform: translate(-50%, -50%) rotate(-27deg);
+  }
+  
+  .border3 {
+    top: 20%; /**//**/
+    left: 50%;/**//**/
+    transform: translate(-50%, -50%);
+  }
+
+  .border4 {
+    top: 30%; /**//**/
+    left: 50%;/**//**/
+    transform: translate(-50%, -50%);
+  }
+
+  .border5 {
+    top: 60%; /**//**/
+    left: 50%;/**//**/
+    transform: translate(-50%, -50%);
+  }
+
+  .border6 {
+    top: 50%; /**//**/
+    left: 50%;/**//**/
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes kuusikulmionAnimaatio {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
