@@ -25,18 +25,26 @@
     </header>
 
 <div class="hexa-wrapper">
+    <span class="icon-close">
+        <ion-icon name="close-sharp"></ion-icon>
+    </span>
+                <!-- Login -->
     <div class="form-box Login">
-        <h2>Login</h2>
+        <h2 class="TXT">Login</h2>
         <form action="#">
             <div class="input-box">
-                <span class="icon"></span>
-                <input type="email" name="email" required>
-                <label>Email</label>
+                <span class="icon">
+                    <ion-icon name="mail-sharp"></ion-icon>
+                </span>
+                <input type="email" name="email" required id="emailInput">
+                <label for="emailInput">Email</label>
             </div>
             <div class="input-box">
-                <span class="icon"></span>
-                <input type="password" name="password" required>
-                <label>Password</label>
+                <span class="icon">
+                    <ion-icon name="lock-closed-sharp"></ion-icon>
+                </span>
+                <input type="password" name="password" required id="passwordInput">
+                <label for="passwordInput">Password</label>
             </div>
             <div class="rememberCB">
                 <label><input type="checkbox"> Remember me</label>
@@ -45,6 +53,41 @@
             <button type="submit" class="btn">Login</button>
             <div class="login-register">
                 <p>Don't have an account ? <a href="#" class="register-link">Register</a></p>
+            </div>
+        </form>
+    </div>
+                <!-- Register -->
+    <div class="form-box Register">
+        <h2 class="TXT">Registration</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="person-sharp"></ion-icon>
+                </span>
+                <input type="username" name="username" required id="reg-usernameInput">
+                <label for="reg-usernameInput">Username</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="mail-sharp"></ion-icon>
+                </span>
+                <input type="email" name="email" required id="reg-emailInput">
+                <label for="reg-emailInput">Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed-sharp"></ion-icon>
+                </span>
+                <input type="password" name="password" required id="reg-passwordInput">
+                <label for="reg-passwordInput">Password</label>
+            </div>
+            <div class="rememberCB">
+                <label><input type="checkbox"> I agree to the terms & conditions</label>
+               
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <div class="login-register">
+                <p>Already have an account ? <a href="#" class="register-link">Login</a></p>
             </div>
         </form>
     </div>
@@ -59,6 +102,11 @@
         <span class="border6"></span>
     </div>
 -->
-<script src="GKL-labelJs.js"></script>
+<script src="GKL-input-anim.css"></script>  <!-- Kokeilin jos toimis näin, mutta ei edes näin.. outoa. -->
+<script src="GKL-script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- <script src="GKL-labelJs.js"></script> -->
+
 </body>
 </html>
