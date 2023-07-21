@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login & Registration</title>
     <link rel="stylesheet" href="GKL-css.css">
+    <script src="GKL-labelJs.js"></script>
 <!-- <link rel="stylesheet" href="GKL-hexa.css"> -->
 </head>
 
 <body>
-<div class="pageContainer">
+
     <header>
         <h2 class="logo">Logo</h2>
         <nav class="navigaatio">
@@ -23,6 +24,32 @@
         
     </header>
 
+<div class="hexa-wrapper">
+    <div class="form-box Login">
+        <h2>Login</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="email" name="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="password" name="password" required>
+                <label>Password</label>
+            </div>
+            <div class="rememberCB">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot password ?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="login-register">
+                <p>Don't have an account ? <a href="#" class="register-link">Register</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+<!--
     <div class="kuusikulmio">
         <span class="border1"></span>
         <span class="border2"></span>
@@ -31,6 +58,7 @@
         <span class="border5"></span>
         <span class="border6"></span>
     </div>
-</div>
+-->
+
 </body>
 </html>

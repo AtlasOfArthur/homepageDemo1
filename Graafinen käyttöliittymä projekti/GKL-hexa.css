@@ -130,11 +130,10 @@
     background-color: #008080;
     clip-path: polygon(25% 90%, 75% 90%, 98% 50%, 75% 10%, 25% 10%, 2% 50% );
     position: relative;
-    margin: 50px;
     overflow: hidden;
     animation: kuusikulmionAnimaatio 2s ease-in-out infinite;
-    left: 63.85%;
-    top: 51.1vh;
+    border-right: 6px solid rgba(57, 255, 20, 0.8);
+    border-left: 6px solid rgba(57, 255, 20, 0.8);
     opacity: 70%;
 }
   
