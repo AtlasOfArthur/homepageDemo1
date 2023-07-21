@@ -193,6 +193,7 @@ header {
 
 .input-box input:focus + label span, .input-box input:valid + label span {
     transform: translateY(-30px);
+    transition: transform 0.3s ease-in;
 } /* Oikein tehty, ei toimi.... :/ */ 
 
 .input-box label {
