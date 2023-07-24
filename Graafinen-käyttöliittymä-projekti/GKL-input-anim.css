@@ -1,11 +1,11 @@
-.input-box input:focus~label,
-.input-box input:valid~label {
-    top: 15px !important;
+#input-box input:focus~label,
+#input-box input:valid~label {
+    top: 15px;
 }
 
 .input-box label {
-    transform: translateY(-50) !important;
-    transition: .5s;
+    transform: translateY(-50px);
+    transition: 0.5s;
 }
 
-/* En tajua, miks ei toimi.. ei JS, eikä CSS */
+/* Ei toiminu, kun pitää olla samassa CSS tiedostossa muun elementtiin liittyvän koodin kanssa. */

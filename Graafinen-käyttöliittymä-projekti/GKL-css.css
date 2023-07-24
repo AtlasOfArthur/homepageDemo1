@@ -184,11 +184,6 @@ visibility: hidden;
     height: 100%;
 }
 
-.input-box label {
-    color: rgb(0, 145, 230);
-    z-index: 99;
-}
-
 .form-box .TXT {
     font-size: 25px;
     color: rgba(109, 230, 50, 1);
@@ -205,6 +200,25 @@ visibility: hidden;
     top: 15px;
     z-index: 9999;
 }
+
+.input-box label {
+    color: rgb(0, 145, 230);
+    transform: translateY(4px);
+    transition: 0.5s;
+    z-index: 99;
+    pointer-events: none; /* Estää labelia vastaanottamasta klikkejä */
+    position: absolute;
+    left: 10px;
+    top: 0; /* Alkuperäinen arvo 0 */
+    font-size: 1.0em;
+}
+ /* Tehty korjaamaan JS, joka ei toiminut tuntemattomasta syystä */
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+    top: -15px; /* Teksti nousee ylöspäin */
+    font-size: 0.6em; /* Fontti kutistuu animaatiossa 60% alkuperäisestä koosta */
+} /* Jostain syystä email label ei toimi halutulla tavalla. En keksi miksi.. */
+
 
 .input-box input {
     background-color: transparent;
